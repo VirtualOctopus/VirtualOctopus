@@ -1,6 +1,6 @@
 
 
-class Octpus(object):
+class Octopus(object):
 
     """
     An octpus will try it best to find your interested topics
