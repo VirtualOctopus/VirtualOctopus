@@ -13,4 +13,13 @@ class BaseContent(object):
     """
 
     def get_type(self) -> str:
+        """
+        get type
+        """
+        raise NotImplementedError
+
+    def release_resource(self):
+        """
+        release current content (from dist/memory/db ...)
+        """
         raise NotImplementedError
