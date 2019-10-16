@@ -1,5 +1,5 @@
-from suckers.base_sucker import BaseSucker
-from suckers.http_sucker import HTTPSucker
+from .base_sucker import BaseSucker
+from .http_sucker import HTTPSucker
 from typing import Optional
 
 __all_suckers = {}

@@ -3,7 +3,8 @@
     "python.formatting.provider": "autopep8",
     "cSpell.words": [
         "SFTP",
-        "Weibo"
+        "Weibo",
+        "unittest"
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
@@ -12,9 +13,9 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./suckers",
+        "./octopus",
         "-p",
-        "*_test.py"
+        "*test.py"
     ],
     "python.linting.lintOnSave": true,
     "python.testing.pytestEnabled": false,

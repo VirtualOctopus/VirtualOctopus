@@ -1,5 +1,5 @@
 
-from contents.base_content import BaseContent
+from octopus.contents.base_content import BaseContent
 
 
 class HTTPContent(BaseContent):

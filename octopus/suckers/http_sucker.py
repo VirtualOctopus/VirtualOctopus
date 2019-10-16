@@ -1,8 +1,8 @@
 from uri import URI
 
-from contents.http_content import HTTPContent
+from octopus.contents.http_content import HTTPContent
 from typing import List
-from suckers.base_sucker import BaseSucker
+from octopus.suckers.base_sucker import BaseSucker
 
 import requests
 
