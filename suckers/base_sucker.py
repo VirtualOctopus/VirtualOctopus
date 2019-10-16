@@ -2,6 +2,8 @@ from uri import URI
 
 from contents.base_content import BaseContent
 
+from typing import List
+
 
 class BaseSucker(object):
 
@@ -12,14 +14,17 @@ class BaseSucker(object):
     """
 
     @classmethod
-    def get_schema(self) -> str:
+    def get_schema(cls) -> str:
         """
         get schema name
         """
         raise NotImplementedError
 
-    def get_content(self, uri: URI, options: dict) -> BaseContent:
+    def get_contents(self, uri: URI, options: dict) -> List[BaseContent]:
         """
-        get content
+        get contents
+
+        it maybe return multi contents,
+        cause single uri contains multi contents
         """
         raise NotImplementedError

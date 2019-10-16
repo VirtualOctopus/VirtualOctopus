@@ -1,7 +1,7 @@
 from uri import URI
 
 from contents.http_content import HTTPContent
-
+from typing import List
 from suckers.base_sucker import BaseSucker
 
 import requests
@@ -10,11 +10,11 @@ import requests
 class HTTPSucker(BaseSucker):
 
     @classmethod
-    def get_schema(self) -> str:
+    def get_schema(cls) -> str:
         return "http"
 
-    def get_content(self, uri: URI, options: dict) -> HTTPContent:
+    def get_contents(self, uri: URI, options: dict) -> List[HTTPContent]:
         response = requests.request(options.get("method"), uri)
-        return HTTPContent(response.text,
-                           response.headers,
-                           response.status_code)
+        return [HTTPContent(response.text,
+                            response.headers,
+                            response.status_code)]

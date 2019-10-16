@@ -11,7 +11,7 @@ class HTTPSuckerTest(unittest.TestCase):
         self.sucker = HTTPSucker()
 
     def test_http_get(self):
-        content = self.sucker.get_content(
-            URI("https://baidu.com"), {"method": "get"})
+        content = self.sucker.get_contents(
+            URI("https://baidu.com"), {"method": "get"})[0]
         self.assertEqual(content.get_header("content-type"), "text/html")
         self.assertEqual(content.get_status_code(), 200)
