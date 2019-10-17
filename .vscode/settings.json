@@ -4,7 +4,15 @@
     "cSpell.words": [
         "SFTP",
         "Weibo",
-        "unittest"
+        "docx",
+        "etree",
+        "lxml",
+        "pptx",
+        "presentationml",
+        "spreadsheetml",
+        "unittest",
+        "wordprocessingml",
+        "xlsx"
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
@@ -13,9 +21,9 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./octopus",
+        "octopus",
         "-p",
-        "*test.py"
+        "*_test.py"
     ],
     "python.linting.lintOnSave": true,
     "python.testing.pytestEnabled": false,
