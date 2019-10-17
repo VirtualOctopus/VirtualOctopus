@@ -1,9 +1,14 @@
+"""
+
+Octopus find everything in everything.
+
+"""
 
 
 class Octopus(object):
 
     """
-    An octpus will try it best to find your interested topics
+    An octopus will try it best to find your interested topics
     in any way/protocol/time/where/machine
     """
 
